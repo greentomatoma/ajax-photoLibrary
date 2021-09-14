@@ -10,25 +10,36 @@
   <title>Photos</title>
 </head>
 <body>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="../public/images/parakeet_1.jpg"></div>
-      <div class="swiper-slide"><img src="../public/images/parakeet_2.jpg"></div>
-      <div class="swiper-slide"><img src="../public/images/parakeet_3.jpg"></div>
-      ...
+  <div id="global-container">
+    <div id="container">
+      <div id="content">
+        <div class="hero">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="hero__title">Beautiful</div>
+                  <img src="../public/images/parakeet_1.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">A good friend</div>
+                  <img src="../public/images/parakeet_2.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Good fortune</div>
+                  <img src="../public/images/parakeet_3.jpg">
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="../public/images/arrow.svg">
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../public/css/main.js"></script>
