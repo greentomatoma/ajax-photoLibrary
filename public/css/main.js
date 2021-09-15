@@ -1,7 +1,5 @@
-// Swiper
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: true,
-
+document.addEventListener('DOMContentLoaded', function() {
+  const hero = new HeroSlider('.swiper');
+  // 自動スライドの開始
+  hero.start();
 });
