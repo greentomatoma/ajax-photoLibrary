@@ -1,0 +1,34 @@
+/***************************************************************
+
+ PCサイズ用 960px以上の画面サイズに適用
+
+****************************************************************/
+
+
+// フォントサイズ設定
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 19px;
+}
+
+.font-lr {
+  font-size: 23px;
+}
+
+.font-lg {
+  font-size: 36px;
+}
+
+
+// margin設定
+.md-lg {
+  margin-bottom: 150px !important;
+}
+
+// padding設定
+.pd-lg {
+  padding-bottom: 150px !important;
+}
