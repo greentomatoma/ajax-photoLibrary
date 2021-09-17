@@ -4,8 +4,6 @@
 
 ****************************************************************/
 
-@import '../hero-slider';
-
 body {
   font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
 }
@@ -49,4 +47,29 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
+}
+
+
+.contents {
+  @extend .content-width;
+
+  &__item {
+    overflow: hidden;
+  }
+
+  &__title {
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+}
+
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  @extend .font-sm;
+  color: #535353;
 }

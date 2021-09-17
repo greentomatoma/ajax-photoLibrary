@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .swiper-slide {
   height: 500px;
   overflow: hidden;
@@ -36,6 +37,10 @@
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.hero {
+  overflow: hidden;
 }
 
 .hero__title {
@@ -114,5 +119,91 @@
   30% {
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+/***************************************************************
+
+ベーススタイル スマホサイズ用
+
+****************************************************************/
+body {
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+}
+
+.font-sm, .sub-title {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg, .main-title {
+  font-size: 25px;
+}
+
+.md-sm {
+  margin-bottom: 16px !important;
+}
+
+.md-lg {
+  margin-bottom: 80px !important;
+}
+
+.pd-sm {
+  padding-bottom: 16px !important;
+}
+
+.pd-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width, .contents {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.contents__item {
+  overflow: hidden;
+}
+
+.main-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  color: #535353;
+}
+
+@media (min-width: 960px) {
+  /***************************************************************
+
+ PCサイズ用 960px以上の画面サイズに適用
+
+****************************************************************/
+  .font-sm, .sub-title {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 19px;
+  }
+  .font-lr {
+    font-size: 23px;
+  }
+  .font-lg, .main-title {
+    font-size: 36px;
+  }
+  .md-lg {
+    margin-bottom: 150px !important;
+  }
+  .pd-lg {
+    padding-bottom: 150px !important;
   }
 }

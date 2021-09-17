@@ -40,6 +40,33 @@
               </div>
             </div>
         </div>
+        <div id="main-content">
+          <main>
+            <section class="contents">
+              <div>
+                <h2 class="main-title">Main Contents</h2>
+              </div>
+              <div class="contents__inner">
+                <div class="contents__item">
+                  <img src="../public/images/parakeet_5.jpg">
+                  <p class="contents__title">コミュニティ</p>
+                </div>
+                <div class="contents__item">
+                  <img src="../public/images/seed_1.jpg">
+                  <p class="contents__title">お買い物</p>
+                </div>
+                <div class="contents__item">
+                  <img src="../public/images/seed_1.jpg">
+                  <p class="contents__title">お買い物</p>
+                </div>
+                <div class="contents__item">
+                  <img src="../public/images/seed_1.jpg">
+                  <p class="contents__title">お買い物</p>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
       </div>
     </div>
   </div>
