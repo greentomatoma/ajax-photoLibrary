@@ -27,10 +27,10 @@ body {
 
 
 // margin設定
-.md-sm {
+.mb-sm {
   margin-bottom: 16px !important;
 }
-.md-lg {
+.mb-lg {
   margin-bottom: 80px !important;
 }
 
@@ -50,17 +50,27 @@ body {
 }
 
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .contents {
-  @extend .content-width;
+    @extend .content-width;
 
-  &__item {
-    overflow: hidden;
-  }
+    &__inner {
+      @extend .flex;
+    }
 
-  &__title {
-    @extend .font-lr;
-    @extend .mb-sm;
-  }
+    &__item {
+      overflow: hidden;
+    }
+
+    &__title {
+      @extend .font-lr;
+      @extend .mb-sm;
+    }
 }
 
 .main-title {
@@ -72,4 +82,35 @@ body {
 .sub-title {
   @extend .font-sm;
   color: #535353;
+}
+
+
+.type {
+
+    &__header {
+      @extend .content-width;
+    }
+
+    &__container {
+      @extend .flex;
+      @extend .content-width;
+    }
+
+    &__title {
+      @extend .font-lr;
+      @extend .mb-sm;
+    }
+
+    &__img {
+      height: 150px;
+      margin-bottom: 30px;
+      
+      & > img {
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
 }

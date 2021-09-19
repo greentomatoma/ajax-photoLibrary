@@ -39,10 +39,6 @@
           transform: translate(-50%, -50%);
 }
 
-.hero {
-  overflow: hidden;
-}
-
 .hero__title {
   position: absolute;
   top: 50%;
@@ -139,7 +135,7 @@ body {
   font-size: 17px;
 }
 
-.font-lr {
+.font-lr, .contents__title, .type__title {
   font-size: 17px;
 }
 
@@ -147,11 +143,11 @@ body {
   font-size: 25px;
 }
 
-.md-sm {
+.mb-sm, .contents__title, .type__title {
   margin-bottom: 16px !important;
 }
 
-.md-lg {
+.mb-lg {
   margin-bottom: 80px !important;
 }
 
@@ -163,10 +159,20 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width, .contents {
+.content-width, .contents, .type__header, .type__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
+}
+
+.flex, .contents__inner, .type__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contents__item {
@@ -182,6 +188,41 @@ body {
   color: #535353;
 }
 
+.type__img {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.type__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  /***************************************************************
+
+ タブレットサイズ用 960px以上の画面サイズに適用
+
+****************************************************************/
+  .contents__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contents__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: 960px) {
   /***************************************************************
 
@@ -194,7 +235,7 @@ body {
   .font-md {
     font-size: 19px;
   }
-  .font-lr {
+  .font-lr, .contents__title, .type__title {
     font-size: 23px;
   }
   .font-lg, .main-title {

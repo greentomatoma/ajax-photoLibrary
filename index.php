@@ -45,6 +45,7 @@
             <section class="contents">
               <div>
                 <h2 class="main-title">Main Contents</h2>
+                <p class="sub-title">お探しのコンテンツをお選びください</p>
               </div>
               <div class="contents__inner">
                 <div class="contents__item">
@@ -62,6 +63,40 @@
                 <div class="contents__item">
                   <img src="../public/images/seed_1.jpg">
                   <p class="contents__title">お買い物</p>
+                </div>
+              </div>
+            </section>
+            <section class="type">
+              <div class="type__header">
+                <h2 class="main-title">Type</h2>
+                <p class="sub-title">気になる子を見てみましょう</p>
+              </div>
+              <div class="type__inner">
+                <div class="type__container">
+                  <div class="type__item">
+                    <div class="type__img">
+                      <img src="../public/images/small_parakeet.jpg">
+                      <p class="type__title">小型インコ</p>
+                    </div>
+                  </div>
+                  <div class="type__item">
+                    <div class="type__img">
+                      <img src="../public/images/lovebird.jpg">
+                      <p class="type__title">ラブバード</p>
+                    </div>
+                  </div>
+                  <div class="type__item">
+                    <div class="type__img">
+                      <img src="../public/images/medium_parakeet.jpg">
+                      <p class="type__title">中型インコ</p>
+                    </div>
+                  </div>
+                  <div class="type__item">
+                    <div class="type__img">
+                      <img src="../public/images/large_parakeet.jpg">
+                      <p class="type__title">大型インコ</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
