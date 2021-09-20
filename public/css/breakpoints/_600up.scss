@@ -58,3 +58,26 @@
     }
 
 }
+
+
+.logo {
+  text-align: left;
+}
+
+.footer {
+
+    &__nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__li {
+      margin-left: 0;
+      margin-right: 30px;
+    }
+}
