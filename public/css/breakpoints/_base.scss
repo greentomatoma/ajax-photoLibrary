@@ -68,6 +68,8 @@ body {
       justify-content: space-between;
       padding: 15px;
       background-color: #e9eae0;
+      position: relative;
+      z-index: 0;
     }
 
     &__sub {
@@ -77,8 +79,11 @@ body {
     &__img {
       height: 300px;
       overflow: hidden;
+      box-shadow: inset 0 0 30px #252525;
       @extend .mb-sm;
-        & > img {
+      & > img {
+          position: relative;
+          z-index: -1;
           object-fit: cover;
           height: 100%;
           width: 100%;
@@ -88,6 +93,36 @@ body {
     &__texts {
       @extend .pb-sm;
     }
+
+    &__title {
+      position: relative;
+        &::before {
+          display: none;
+          content: '';
+          position: absolute;
+          left: -112px;
+          bottom: 20px;
+          width: 100px;
+          height: 1.5px;
+          background-color: black;
+          transform: translateY(-50%) scaleX(0);
+          animation: kf-border-anime 1.4s;
+          // 繰り返し回数
+          animation-iteration-count: infinite;
+        }
+    }
+}
+
+// introductionの横棒のアニメーション
+@keyframes kf-border-anime {
+  0%,
+  50%,
+  100% {
+    transform: translateX(-5%);
+  }
+  30% {
+    transform: none;
+  }
 }
 
 
