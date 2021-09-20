@@ -159,13 +159,13 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width, .introduction, .contents, .type__header, .type__container {
+.content-width, .introduction, .contents, .type__header, .type__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.flex, .introduction__inner, .contents__inner, .type__container {
+.flex, .introduction__inner, .contents__inner, .type__container, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,6 +177,15 @@ body {
 
 .orange {
   color: #ff9100;
+}
+
+.main-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  color: #535353;
 }
 
 .introduction__inner {
@@ -266,15 +275,6 @@ body {
   width: 100%;
 }
 
-.main-title {
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-.sub-title {
-  color: #535353;
-}
-
 .type__inner {
   position: relative;
 }
@@ -306,6 +306,40 @@ body {
      object-position: top;
   height: 100%;
   width: 100%;
+}
+
+.logo {
+  font-size: 38px;
+  text-align: center;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__li {
+  padding: 0;
+  margin: 10px;
+}
+
+.footer__li > a {
+  color: #535353;
 }
 
 @media (min-width: 600px) {
@@ -365,6 +399,29 @@ body {
   .type__item {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
+  }
+  .logo {
+    text-align: left;
+  }
+  .footer__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__li {
+    margin-left: 0;
+    margin-right: 30px;
   }
 }
 

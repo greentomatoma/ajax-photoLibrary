@@ -121,6 +121,22 @@
             </section>
           </main>
         </div>
+        <footer class="footer">
+          <div class="logo">
+            <span class="logo">Cocco</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li"><a href="#">Service</a></li>
+              <li class="footer__li"><a href="#">Contact</a></li>
+              <li class="footer__li"><a href="#">Company</a></li>
+              <li class="footer__li"><a href="#">Sitemap</a></li>
+            </ul>
+            <div class="footer__copyright">
+              &copy; greentomatoma
+            </div>
+          </nav>
+        </footer>
       </div>
     </div>
   </div>

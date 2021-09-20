@@ -59,6 +59,17 @@ body {
   color: rgb(255, 145, 0);
 }
 
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  @extend .font-sm;
+  color: #535353;
+}
+
 
 .introduction {
     @extend .content-width;
@@ -113,6 +124,8 @@ body {
     }
 }
 
+
+
 // introductionの横棒のアニメーション
 @keyframes kf-border-anime {
   0%,
@@ -151,16 +164,7 @@ body {
     }
 }
 
-.main-title {
-  @extend .font-lg;
-  font-weight: 600;
-  margin-bottom: 0;
-}
 
-.sub-title {
-  @extend .font-sm;
-  color: #535353;
-}
 
 
 .type {
@@ -204,6 +208,41 @@ body {
         height: 100%;
         width: 100%;
       }
+    }
+
+}
+
+
+.logo {
+  font-size: 38px;
+  text-align: center;
+}
+
+.footer {
+  padding: 60px 0;
+  @extend .content-width;
+
+    &__nav {
+      @extend .flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__ul {
+      @extend .flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &__li {
+      padding: 0;
+      margin: 10px;
+
+        & > a {
+          color: #535353;
+        }
     }
 
 }
