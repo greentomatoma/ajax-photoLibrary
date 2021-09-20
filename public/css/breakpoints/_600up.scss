@@ -1,8 +1,28 @@
 /***************************************************************
 
- タブレットサイズ用 960px以上の画面サイズに適用
+ タブレットサイズ用 600px以上の画面サイズに適用
 
 ****************************************************************/
+
+
+.introduction {
+
+    &__inner {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+
+    &__tests,
+    &__img {
+      flex-basis: 47%;
+    }
+
+    &__texts {
+      display: flex;
+      align-items: center;
+    }
+}
 
 
 .contents {
