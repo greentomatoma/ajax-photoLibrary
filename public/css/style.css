@@ -143,7 +143,7 @@ body {
   font-size: 25px;
 }
 
-.mb-sm, .contents__title, .type__title {
+.mb-sm, .introduction__sub, .introduction__img, .contents__title, .type__title {
   margin-bottom: 16px !important;
 }
 
@@ -151,21 +151,21 @@ body {
   margin-bottom: 80px !important;
 }
 
-.pd-sm {
+.pb-sm, .introduction__texts {
   padding-bottom: 16px !important;
 }
 
-.pd-lg {
+.pb-lg {
   padding-bottom: 80px !important;
 }
 
-.content-width, .contents, .type__header, .type__container {
+.content-width, .introduction, .contents, .type__header, .type__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.flex, .contents__inner, .type__container {
+.flex, .introduction__inner, .contents__inner, .type__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,9 +175,32 @@ body {
           flex-direction: column;
 }
 
+.orange {
+  color: #ff9100;
+}
+
+.introduction__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #e9eae0;
+}
+
+.introduction__img {
+  height: 300px;
+  overflow: hidden;
+}
+
+.introduction__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .contents__item {
   overflow: hidden;
-  height: 150px;
   margin-bottom: 30px;
 }
 
@@ -235,9 +258,30 @@ body {
 @media (min-width: 600px) {
   /***************************************************************
 
- タブレットサイズ用 960px以上の画面サイズに適用
+ タブレットサイズ用 600px以上の画面サイズに適用
 
 ****************************************************************/
+  .introduction__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 50px;
+  }
+  .introduction__tests, .introduction__img {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .introduction__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .contents__inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -292,6 +336,9 @@ body {
   .pd-lg {
     padding-bottom: 150px !important;
   }
+  .introduction__img {
+    height: 400px;
+  }
   .type__item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
@@ -307,6 +354,9 @@ body {
  1280px以上の画面サイズに適用
 
 ****************************************************************/
+  .introduction__inner {
+    padding: 50px 150px;
+  }
   .type__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;

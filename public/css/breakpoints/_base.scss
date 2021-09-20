@@ -35,10 +35,10 @@ body {
 }
 
 // padding設定
-.pd-sm {
+.pb-sm {
   padding-bottom: 16px !important;
 }
-.pd-lg {
+.pb-lg {
   padding-bottom: 80px !important;
 }
 
@@ -55,6 +55,41 @@ body {
   flex-direction: column;
 }
 
+.orange {
+  color: rgb(255, 145, 0);
+}
+
+
+.introduction {
+    @extend .content-width;
+
+    &__inner {
+      @extend .flex;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: #e9eae0;
+    }
+
+    &__sub {
+      @extend .mb-sm;
+    }
+
+    &__img {
+      height: 300px;
+      overflow: hidden;
+      @extend .mb-sm;
+        & > img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+    }
+
+    &__texts {
+      @extend .pb-sm;
+    }
+}
+
 
 .contents {
     @extend .content-width;
@@ -65,9 +100,8 @@ body {
 
     &__item {
       overflow: hidden;
-      height: 150px;
       margin-bottom: 30px;
-      
+
         & > img {
           object-fit: cover;
           object-position: top;

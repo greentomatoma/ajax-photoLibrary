@@ -42,6 +42,25 @@
         </div>
         <div id="main-content">
           <main>
+            <section class="introduction">
+              <div class="introduction__inner">
+                <div class="introduction__img">
+                  <img src="../public/images/parakeet_4.jpg">
+                </div>
+                <div class="introduction__texts">
+                  <div class="introduction__text-inner">
+                    <div class="introduction__title main-title">
+                      <span class="orange">About</span> <span>service</span>
+                    </div>
+                    <div class="introduction__sub sub-title">初めてご利用される方へ</div>
+                    <div class="introduction__description">
+                      <p>インコ専用の<br>サービスサイトです</p>
+                      <p>気になるコンテンツを見てみましょう。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section class="contents">
               <div>
                 <h2 class="main-title">Main Contents</h2>
