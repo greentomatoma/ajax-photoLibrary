@@ -35,6 +35,27 @@
 
 
 
+.header {
+  display: block;
+
+    &__nav {
+      display: block;
+    }
+
+    &__ul {
+      display: flex;
+    }
+}
+
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+
+
 .introduction {
 
   &__img {
