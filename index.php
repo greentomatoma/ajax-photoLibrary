@@ -14,6 +14,26 @@
 <body>
   <div id="global-container">
     <div id="container">
+      <header class="header">
+        <div class="header__inner">
+          <div class="logo">
+            <span class="logo">Cocco</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li"><a href="#">Service</a></li>
+              <li class="header__li"><a href="#">Company</a></li>
+              <li class="header__li"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
       <div id="content">
         <div class="hero">
             <!-- Slider main container -->
@@ -139,6 +159,28 @@
         </footer>
       </div>
     </div>
+    <nav class="mobile-menu">
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">
+            <span class="main-title">Service</span>
+            <span class="sub-title">サービスについて</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">
+            <span class="main-title">Service</span>
+            <span class="sub-title">サービスについて</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">
+            <span class="main-title">Service</span>
+            <span class="sub-title">サービスについて</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../public/css/modules/hero-slider.js"></script>

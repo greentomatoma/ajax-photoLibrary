@@ -71,6 +71,31 @@ body {
 }
 
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+    &__nav {
+      display: none;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      @extend .content-width;
+    }
+}
+
+
 .introduction {
     @extend .content-width;
 
