@@ -33,7 +33,6 @@
           </button>
         </div>
       </header>
-
       <div id="content">
         <div class="hero">
             <!-- Slider main container -->
