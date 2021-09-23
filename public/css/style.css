@@ -239,6 +239,16 @@ body {
   padding-top: 100px;
 }
 
+#main-content {
+  position: relative;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: -1;
+}
+
 .introduction__inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -393,6 +403,72 @@ body {
   color: #535353;
 }
 
+.side {
+  display: none;
+  position: fixed;
+  top: 70%;
+  -webkit-transform: rotateY(-50%);
+          transform: rotateY(-50%);
+  color: #252525;
+}
+
+.side a,
+.side span {
+  color: #252525;
+  text-decoration: none;
+  margin: 0 40px;
+  vertical-align: middle;
+}
+
+.side.left {
+  left: 50px;
+}
+
+.side.left .side__inner {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.side.right {
+  right: 50px;
+}
+
+.side.right .side__inner {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.icon {
+  position: relative;
+}
+
+.icon::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: -20px;
+  width: 1em;
+  height: 1em;
+  -webkit-transform: rotateY(-50%);
+          transform: rotateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon.twitter::before {
+  background-image: url(../images/twitter.svg);
+}
+
+.icon.fb::before {
+  background-image: url(../images/facebook.svg);
+}
+
 @media (min-width: 600px) {
   /***************************************************************
 
@@ -543,5 +619,8 @@ body {
   .type__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;
+  }
+  .side {
+    display: block;
   }
 }

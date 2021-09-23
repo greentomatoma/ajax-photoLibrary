@@ -60,6 +60,12 @@
             </div>
         </div>
         <div id="main-content">
+          <aside class="side left">
+            <div class="side__inner">
+              <a href="#" class="twitter icon">Twitter</a>
+              <a href="#" class="fb icon">Facebook</a>
+            </div>
+          </aside>
           <main>
             <section class="introduction">
               <div class="introduction__inner">
@@ -139,6 +145,11 @@
               </div>
             </section>
           </main>
+          <aside class="side right">
+            <div class="side__inner">
+              <span>&copy; greentomatoma</span>
+            </div>
+          </aside>
         </div>
         <footer class="footer">
           <div class="logo">
@@ -158,7 +169,7 @@
         </footer>
       </div>
     </div>
-    <nav class="mobile-menu">
+    <!-- <nav class="mobile-menu">
       <ul class="mobile-menu__main">
         <li class="mobile-menu__item">
           <a href="#" class="mobile-menu__link">
@@ -179,7 +190,7 @@
           </a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
   </div>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../public/css/modules/hero-slider.js"></script>
