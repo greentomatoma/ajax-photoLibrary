@@ -110,9 +110,6 @@ body {
 }
 
 
-#content {
-  padding-top: 100px;
-}
 
 #main-content {
   position: relative;
@@ -127,6 +124,7 @@ main {
 
 .introduction {
     @extend .content-width;
+    @extend .mb-lg;
 
     &__inner {
       @extend .flex;
@@ -195,6 +193,7 @@ main {
 
 .contents {
     @extend .content-width;
+    @extend .mb-lg;
 
     &__inner {
       @extend .flex;
