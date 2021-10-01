@@ -364,3 +364,86 @@ main {
       }
     }
 }
+
+
+/* ハンバーガーメニュー */
+.mobile-menu__btn {
+  display: inline-block;
+  position: fixed;
+  width: 29px;
+  border-radius: 2px;
+  top: 20px;
+  right: 31px;
+  z-index: 2000;
+
+  & > span {
+    position: absolute;
+    left: 14px;
+    width: 100%;
+    height: 3px;
+    transition: all .4s;
+    background-color: #666;
+  }
+}
+
+.mobile-menu__btn span:nth-of-type(1){
+  top: 15px;
+}
+.mobile-menu__btn span:nth-of-type(2){
+  top: 23px;
+}
+.mobile-menu__btn span:nth-of-type(3){
+  top: 31px;
+}
+
+
+/* activeクラスが付与されると線が回転して×に */
+
+.mobile-menu__btn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 29px;
+}
+
+.mobile-menu__btn.active span:nth-of-type(2) {
+opacity: 0;/*真ん中の線は透過*/
+}
+
+.mobile-menu__btn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 29px;
+}
+
+/* モバイルメニュー */
+#mobile-menu {
+  position: fixed;
+  z-index: -2;
+  opacity: 0;
+  top: 0;
+  width:100%;
+  height: 100vh;
+  background:#999;
+  transition: all 0.3s;
+
+    & > ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin-top: 50px;
+    }
+
+    & .mobile-menu__link {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      color: white;
+    }
+}
+
+#mobile-menu.panelactive{
+  opacity: 1;
+  z-index:999;
+}

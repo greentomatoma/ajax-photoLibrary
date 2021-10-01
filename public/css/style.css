@@ -1,4 +1,91 @@
 @charset "UTF-8";
+.pace-done #global-container {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+#global-container {
+  opacity: 0;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-clip: padding-box;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 12px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  display: block;
+  position: absolute;
+  right: 100%;
+  margin-right: -7px;
+  width: 93%;
+  top: 7px;
+  height: 14px;
+  font-size: 12px;
+  background: #90cc57;
+  color: #90cc57;
+  line-height: 60px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-box-shadow: 120px 0 #fff, 240px 0 #fff;
+  -ms-box-shadow: 120px 0 #fff, 240px 0 #fff;
+  box-shadow: 120px 0 #fff, 240px 0 #fff;
+}
+
+.pace .pace-progress:after {
+  content: attr(data-progress-text);
+  display: inline-block;
+  position: fixed;
+  width: 45px;
+  text-align: right;
+  right: 0;
+  padding-right: 16px;
+  top: 4px;
+}
+
+.pace .pace-activity {
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  z-index: 2001;
+  -webkit-box-shadow: inset 0 0 0 2px #90cc57, inset 0 0 0 7px #FFF;
+          box-shadow: inset 0 0 0 2px #90cc57, inset 0 0 0 7px #FFF;
+  border-radius: 10px;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
 .swiper-slide {
   height: 500px;
   overflow: hidden;
@@ -467,6 +554,98 @@ main {
 
 .icon.fb::before {
   background-image: url(../images/facebook.svg);
+}
+
+/* ハンバーガーメニュー */
+.mobile-menu__btn {
+  display: inline-block;
+  position: fixed;
+  width: 29px;
+  border-radius: 2px;
+  top: 20px;
+  right: 31px;
+  z-index: 2000;
+}
+
+.mobile-menu__btn > span {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  height: 3px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: #666;
+}
+
+.mobile-menu__btn span:nth-of-type(1) {
+  top: 15px;
+}
+
+.mobile-menu__btn span:nth-of-type(2) {
+  top: 23px;
+}
+
+.mobile-menu__btn span:nth-of-type(3) {
+  top: 31px;
+}
+
+/* activeクラスが付与されると線が回転して×に */
+.mobile-menu__btn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+  width: 29px;
+}
+
+.mobile-menu__btn.active span:nth-of-type(2) {
+  opacity: 0;
+  /*真ん中の線は透過*/
+}
+
+.mobile-menu__btn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+  width: 29px;
+}
+
+/* モバイルメニュー */
+#mobile-menu {
+  position: fixed;
+  z-index: -2;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#mobile-menu > ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 50px;
+}
+
+#mobile-menu .mobile-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#mobile-menu.panelactive {
+  opacity: 1;
+  z-index: 999;
 }
 
 @media (min-width: 600px) {
