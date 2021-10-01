@@ -28,13 +28,35 @@
               <li class="header__li"><a href="#">Contact</a></li>
             </ul>
           </nav>
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
+        </header>
+      <div class="mobile-menu__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+      <nav id="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <span class="main-title">Service</span>
+              <span class="sub-title">サービスについて</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <span class="main-title">Service</span>
+              <span class="sub-title">サービスについて</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <span class="main-title">Service</span>
+              <span class="sub-title">サービスについて</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div id="content">
         <div class="hero">
             <!-- Slider main container -->
@@ -171,31 +193,13 @@
         </footer>
       </div>
     </div>
-    <!-- <nav class="mobile-menu">
-      <ul class="mobile-menu__main">
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">
-            <span class="main-title">Service</span>
-            <span class="sub-title">サービスについて</span>
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">
-            <span class="main-title">Service</span>
-            <span class="sub-title">サービスについて</span>
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">
-            <span class="main-title">Service</span>
-            <span class="sub-title">サービスについて</span>
-          </a>
-        </li>
-      </ul>
-    </nav> -->
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- スライダー -->
   <script src="../public/css/modules/hero-slider.js"></script>
+  <!-- ハンバーガーメニュー -->
+  <script src="../public/css/modules/mobile-menu.js"></script>
   <script src="../public/css/main.js"></script>
 </body>
 </html>
