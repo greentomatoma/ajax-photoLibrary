@@ -168,6 +168,28 @@
                 </div>
               </div>
             </section>
+            <section class="question">
+              <ul>
+                <li>
+                  <h3 class="question__title">表示されている以外のインコもいますか？</h3>
+                  <div class="box">
+                    <p>はい。もちろんいます！</p>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="question__title">ご飯の発送はできますでしょうか？</h3>
+                  <div class="box">
+                    <p>はい。ご飯の他にも、おもちゃなどの用品も受け付けております。</p>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="question__title">イベントなどはありますか？</h3>
+                  <div class="box">
+                    <p>年に2回ほど開催されています。</p>
+                  </div>
+                </li>
+              </ul>
+            </section>
           </main>
           <aside class="side right">
             <div class="side__inner">
