@@ -454,9 +454,10 @@ opacity: 0;/*真ん中の線は透過*/
 .question {
   
   ul {
+    @extend .content-width;
     list-style: none;
-    width: 96%;
     margin:0 auto;
+    padding: 0;
   }
 
   li {
@@ -494,8 +495,21 @@ opacity: 0;/*真ん中の線は透過*/
   }
 }
 
+
+  // closeというクラスがついた時の変化
+  .close {
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+// アコーディオンで表示されるエリア
 .box {
-  // display: none;/*はじめは非表示*/
+  display: none;
   background: #f3f3f3;
   margin:0 3% 3% 3%;
   padding: 3%;

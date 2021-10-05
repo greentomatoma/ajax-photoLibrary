@@ -250,7 +250,7 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .introduction, .contents, .type__header, .type__container, .footer {
+.content-width, .header__inner, .introduction, .contents, .type__header, .type__container, .footer, .question ul {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -651,8 +651,8 @@ main {
 /* アコーディオンパネル */
 .question ul {
   list-style: none;
-  width: 96%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .question li {
@@ -693,7 +693,18 @@ main {
           transform: rotate(90deg);
 }
 
+.close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .box {
+  display: none;
   background: #f3f3f3;
   margin: 0 3% 3% 3%;
   padding: 3%;
