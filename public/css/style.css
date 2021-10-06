@@ -442,6 +442,10 @@ main {
   z-index: 2;
 }
 
+.type__item {
+  opacity: 0;
+}
+
 .type__img {
   height: 150px;
   margin-bottom: 30px;
@@ -708,6 +712,43 @@ main {
   background: #f3f3f3;
   margin: 0 3% 3% 3%;
   padding: 3%;
+}
+
+/* スクロールアニメーション */
+.flipLeftTop {
+  -webkit-animation-name: flipLeftTopAnime;
+          animation-name: flipLeftTopAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes flipLeftTopAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-20px, 80px) rotate(-15deg);
+            transform: translate(-20px, 80px) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes flipLeftTopAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-20px, 80px) rotate(-15deg);
+            transform: translate(-20px, 80px) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 @media (min-width: 600px) {

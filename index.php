@@ -224,6 +224,8 @@
   <script src="../public/css/modules/mobile-menu.js"></script>
   <!-- アコーディオンパネル -->
   <script src="../public/css/modules/accordion-menu.js"></script>
+  <!-- スクロールアニメーション -->
+  <script src="../public/css/modules/scroll-animation.js"></script>
   <script src="../public/css/main.js"></script>
 </body>
 </html>
